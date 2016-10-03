@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:background="@drawable/baner_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:text="Kategorija A"
+            android:id="@+id/Abtn"
+            android:onClick="onClickA"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button android:layout_width="200dp" android:layout_height="70dp"
+            android:id="@+id/Bbtn"
+            android:onClick="onClickB"
+            android:layout_below="@+id/Abtn" android:layout_alignLeft="@+id/Abtn" android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            android:text="Kategorija B" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:text="Kategorija C"
+            android:id="@+id/Cbtn"
+            android:onClick="onClickC"
+            android:layout_below="@+id/Bbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp" />
+    </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+
